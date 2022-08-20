@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course cart</title>
+    <!-- daisy ui and tailwind css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- navigation bar section start -->
+    <nav>
+      <div class="z-40 btm-nav">
+        <button onclick="courseCounter()" class="bg-pink-200 text-pink-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <span class="btm-nav-label">Home</span>
+        </button>
+        <button
+          onclick="courseCounter()"
+          class="active bg-neutral text-neutral-content"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span class="btm-nav-label">Course cart</span>
+        </button>
+        <button class="bg-teal-200 text-teal-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            />
+          </svg>
+          <span class="btm-nav-label">Statics</span>
+        </button>
+      </div>
+    </nav>
+    <!-- navigation bar section end -->
+    <!-- course section start  -->
+    <main class="mb-20 mt-10">
+      <section class="w-11/12 mx-auto grid grid-cols-2 gap-5">
+        <!-- course information section start  -->
+        <div class="grid grid-cols-2 gap-2">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full h-40"
+                src="./image/angular.jpg"
+                alt="angular"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Angular js</h2>
+              <p>Price $<span>100</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="courseCounter(this)" class="btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full h-40"
+                src="./image/download.png"
+                alt="course"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">next js</h2>
+              <p>Price $<span>105</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="courseCounter(this)" class="btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./image/panda.png" alt="panda" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Panda</h2>
+              <p>Price $<span>110</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="courseCounter(this)" class="btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./image/react.png" alt="react" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">React js</h2>
+              <p>Price $<span>110</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="courseCounter(this)" class="btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./image/vue.png" alt="vue" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Vue js</h2>
+              <p>Price $<span>100</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="courseCounter(this)" class="btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- course information section end -->
+        <!-- course cart list section start -->
+        <div>
+          <h1 class="text-center text-3xl font-semibold mb-8">
+            Course amount counter
+          </h1>
+          <div>
+            <div class="overflow-x-auto">
+              <table class="table table-zebra w-full">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Money</th>
+                  </tr>
+                </thead>
+                <tbody id="course-info"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- course cart list section end -->
+      </section>
+    </main>
+    <!-- course section end  -->
+    <script src="./javascript/courseCounter.js"></script>
+  </body>
+</html>
